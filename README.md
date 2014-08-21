@@ -1,16 +1,12 @@
-Javascript app to plot onto google maps hsr live data feed
-optimized for desktops, tables and phones.
-View the bus in their current gps position updated live every two mins.
-View the bus routes currently available
-Server side code not included.
-Requires json data feed in the form of:
-
-buses[]
-an array of buses
-
-each bus contains
-RouteId, RouteName, RouteCode, LatLng, Bearing and a array of ShapeCoords[]
-So this program takes latlng for each entry provided and plot a bus for it on the mape.
+##Javascript app to plot hsr's gtfs-rt feed onto google maps
+This program takes lat,lng for a bus and plots it on the map.
 Arrows are drawn using the Bearing, and routes are plotted using the ShapeCoords array.
+
+###Vehicles.pb and Shapes.txt
+The ajax call expects an array of buses from the Vehicles.pb. Each bus entry has an additional array of shapes for the particular bus by routeid from the gtfs feed's shapes.txt file.
+
+##buses[]
+###per bus entry
+RouteId, RouteName, RouteCode, LatLng, Bearing and a array of ShapeCoords[]
 
 
