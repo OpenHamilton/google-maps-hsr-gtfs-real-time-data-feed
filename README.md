@@ -9,4 +9,8 @@ The ajax call expects an array of buses from the Vehicles.pb. Each bus entry has
 ###per bus entry
 RouteId, RouteName, RouteCode, LatLng, Bearing and a array of ShapeCoords[]
 
+DEMO: www.webscripts.biz:8081 www.webscripts.biz/hsr
+
+LICENSE: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
 
